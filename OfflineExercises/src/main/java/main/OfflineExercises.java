@@ -10,10 +10,12 @@ public class OfflineExercises {
 	// multChar("AAbb") → "AAAAAAbbbbbb"
 	// multChar("Hi-There") → "HHHiii---TTThhheeerrreee"
 
-	public String multChar(String input) {
-		String[] newArray = new String[3];
-
-		return "";
+	public char multChar(String input) {
+		char multipleLetter[]= input.toCharArray();
+		for (char c: multipleLetter) {
+		char mL='c' +'c'+ 'c';
+		return mL;
+	}
 	}
 
 	// Return the string (backwards) that is between the first and last appearance
@@ -43,8 +45,13 @@ public class OfflineExercises {
 	// evenlySpaced(4, 60, 9) → false
 
 	public boolean evenlySpaced(int a, int b, int c) {
+		if(b-a==c-b | a-c==b-a | b-c==b-a ) {
+			return true;
+		}
+		else {
 
 		return false;
+		}
 	}
 
 	// Given a string and an int n, return a string that removes n letters from the
@@ -69,8 +76,10 @@ public class OfflineExercises {
 	// endsDev("devisnotcool") → false
 
 	public boolean endsDev(String input) {
+		char endD[]= input.toCharArray();
 		int len = input.length();
-		if (String.valueOf(len) == "v" && String.valueOf(len - 1) == "e" && String.valueOf(len - 2) == "d") {
+		for (char c: endD) {
+		if (endD[len] == 'v' && endD[len - 1]=='e' && endD[len - 2] == 'd') {
 			return true;
 		} else {
 			return false;
@@ -86,6 +95,16 @@ public class OfflineExercises {
 	// superBlock("") → 0
 
 	public int superBlock(String input) {
+		char sB[]= input.toCharArray();
+		int count=0;
+		for (char c: sB) {
+			if (c==c-1) {
+				count ++;
+			}
+		}
+				return count;
+				
+		
 
 	}
 
@@ -151,9 +170,11 @@ public class OfflineExercises {
 	// largest("15 72 80 164") → 11
 	// largest("555 72 86 45 10") → 15
 
-	public int largest(String input) {
+	public String largest(String input) {
 		String[] highestValue = input.split(" ");
 		for (String i : highestValue) {
+			return i + i++;
+			
 
 		}
 
