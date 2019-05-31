@@ -79,11 +79,12 @@ public class OfflineExercises {
 		char endD[]= input.toCharArray();
 		int len = input.length();
 		for (char c: endD) {
-		if (endD[len] == 'v' && endD[len - 1]=='e' && endD[len - 2] == 'd') {
+		if (endD[len-1] == 'v' && endD[len - 2]=='e' && endD[len - 3] == 'd') {
 			return true;
 		} else {
 			return false;
 
+		}
 		}
 	}
 
